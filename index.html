@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verif Quiz </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- <a href="https://storyset.com/education">Education illustrations by Storyset</a> -->
+</head>
+<body>
+   <header>
+    <div class="container">
+        <div class="contai">
+            <div class="nav">
+                <h2 class="verif">Verif.</h2>
+                <div class="user-profile">
+                    <div class="user"></div>
+              
+                <div class="user-info">
+                    <p class="hellos">Hello</p>
+                <h2 class="guest">Guest</h2>
+                </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+   </header>
+
+   <main>
+    <section id="welcome">
+        <div class="work">
+            <div class="image">
+                <img src="Exams-bro.svg" alt="">
+            </div>
+            <div class="text">
+                <p class="praa">Test Your Knowledge</p>
+                <h1 class="wel">Welcome to Verif Quiz!</h1>
+                <p class="prgh">Challenge Yourself with variety of questions and see how much you know</p>
+              <a href="#" id="quizs">
+                   <span class="play-icon">▶</span>
+                 <span>Start Quiz</span></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="quiz">
+        <div class="quiz-card">
+
+      
+        <div class="quiz-header">
+         <p id="timer">⏱ 00:30</p>
+        </div>
+
+        <div class="question-area">
+            <p id="question-count">
+           
+            </p>
+            <div class="progress-track">
+                <div class="progress-bar"></div>
+            </div>
+            <h2 id ="your-question"></h2>
+        </div>
+        <div id="options" class="option-here"></div>
+        <div id="result"></div>
+        <button id="next-btn" disabled>Next Question</button>
+       
+        <div id="final-result" class="hide">
+    <h2>Quiz Completed!</h2>
+    <p id="final-score"></p>
+    <p id="final-percentage"></p>
+     <button id="resart-btn" style="display: none">Restart</button>
+    <button id="play-again">Play Again</button>
+</div>
+          </div>
+    </section>
+   </main>
+<script src="app.js"></script>
+</body>
+
+</html>
