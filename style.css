@@ -13,7 +13,10 @@ html, body {
 body{
     background-color: #F0F7F4;
     font-family: 'Inter', sans-serif;
-       overflow-y: hidden;
+       /* overflow-y: hidden; */
+           overflow-x: hidden;
+    overflow-y: auto;
+
 }
 
 .container{
@@ -270,13 +273,13 @@ header{
         letter-spacing: 0.3px;
     }
 
-    .start-btn {
+    #quizs {
         width: 200px;
         max-width: 100%;
         margin: 20px auto 0;
         padding: 13px 18px;
     }
-
+/* 
     .footer {
         gap: 8px;
         flex-wrap: wrap;
@@ -284,7 +287,7 @@ header{
         text-align: center;
         padding: 14px 12px;
         font-size: 11px;
-    }
+    } */
 }
 
 
@@ -584,4 +587,366 @@ button.wrong{
 #final-percentage {
     font-size: 1rem;
     color: #52665C;
+}
+
+
+
+
+/* =========================
+   TABLET: 768px and below
+========================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .contai {
+        margin: 0;
+        padding: 12px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .nav {
+        padding: 10px 14px;
+        gap: 10px;
+        border-radius: 12px;
+    }
+
+    .verif {
+        font-size: 1.6rem;
+    }
+
+    .user-profile {
+        gap: 8px;
+    }
+
+    .user {
+        width: 36px;
+        height: 36px;
+    }
+
+    .user::before {
+        left: 13px;
+    }
+
+    .user::after {
+        left: 8px;
+    }
+
+    .guest {
+        font-size: 16px;
+    }
+
+    .hellos {
+        font-size: 11px;
+    }
+
+    /* Welcome page */
+
+    .work {
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+        padding: 24px 16px;
+        gap: 20px;
+    }
+
+    .image {
+        width: 100%;
+        flex: none;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 340px;
+        max-height: 35vh;
+        object-fit: contain;
+    }
+
+    .text {
+        width: 100%;
+        flex: none;
+        padding: 0;
+    }
+
+    .wel,
+    .text h1 {
+        font-size: clamp(27px, 6vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    .praa {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .prgh {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #quizs {
+        min-width: 180px;
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 13px 20px;
+    }
+
+    /* Quiz section */
+
+    #quiz {
+        padding: 16px 12px;
+    }
+
+    .quiz-card {
+        width: 100%;
+        max-width: 600px;
+        margin: 8px auto;
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .quiz-header {
+        margin-bottom: 16px;
+    }
+
+    #timer {
+        padding: 9px 13px;
+        font-size: 15px;
+    }
+
+    .question-area {
+        margin-bottom: 18px;
+    }
+
+    #question-count {
+        font-size: 13px;
+    }
+
+    #your-question {
+        font-size: clamp(20px, 4vw, 25px);
+        line-height: 1.4;
+    }
+
+    .option-here {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .option-here button {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+
+    .progress-track {
+        height: 7px;
+    }
+
+    #next-btn {
+        width: 100%;
+        min-width: 0;
+        margin-top: 20px;
+        padding: 14px;
+    }
+
+    #resart-btn,
+    #play-again {
+        width: 100%;
+        padding: 13px 18px;
+    }
+
+    #final-result {
+        padding: 8px 0;
+    }
+
+    #final-result h2 {
+        font-size: 1.5rem;
+    }
+
+    #final-score {
+        font-size: 1.15rem;
+    }
+
+    #final-percentage {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE: 480px
+========================= */
+
+@media (max-width: 480px) {
+
+    .contai {
+        padding: 8px;
+    }
+
+    .nav {
+        padding: 9px 10px;
+    }
+
+    .verif {
+        font-size: 1.4rem;
+    }
+
+    .user {
+        width: 34px;
+        height: 34px;
+    }
+
+    .user::before {
+        width: 9px;
+        height: 9px;
+        top: 6px;
+        left: 12px;
+    }
+
+    .user::after {
+        width: 18px;
+        height: 11px;
+        top: 17px;
+        left: 8px;
+    }
+
+    .guest {
+        font-size: 14px;
+    }
+
+    .hellos {
+        font-size: 10px;
+    }
+
+    .work {
+        padding: 16px 8px 24px;
+        gap: 16px;
+    }
+
+    .image img {
+        max-width: 290px;
+        max-height: 30vh;
+    }
+
+    .wel,
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .praa {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .prgh {
+        font-size: 14px;
+    }
+
+    #quizs {
+        width: 100%;
+        max-width: 220px;
+        font-size: 15px;
+    }
+
+    #quiz {
+        padding: 10px 6px;
+    }
+
+    .quiz-card {
+        padding: 18px 13px;
+        margin: 6px auto;
+    }
+
+    #your-question {
+        font-size: 21px;
+    }
+
+    .option-here button {
+        padding: 13px 12px;
+        font-size: 14px;
+    }
+
+    #timer {
+        padding: 8px 11px;
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
+
+    #final-result h2 {
+        font-size: 1.35rem;
+    }
+}
+
+
+/* =========================
+   EXTRA SMALL MOBILE: 360px
+========================= */
+
+@media (max-width: 360px) {
+
+    .nav {
+        padding: 8px;
+    }
+
+    .verif {
+        font-size: 1.25rem;
+    }
+
+    .user-profile {
+        gap: 6px;
+    }
+
+    .guest {
+        font-size: 13px;
+    }
+
+    .work {
+        padding: 12px 6px 20px;
+    }
+
+    .image img {
+        max-width: 250px;
+    }
+
+    .wel,
+    .text h1 {
+        font-size: 25px;
+    }
+
+    .prgh {
+        font-size: 13px;
+    }
+
+    .quiz-card {
+        padding: 15px 10px;
+    }
+
+    #your-question {
+        font-size: 19px;
+    }
+
+    .option-here button {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
 }
